@@ -17,6 +17,7 @@
         "pxlrbt/filament-spotlight": "^1.3",
         "spatie/laravel-activitylog": "^4.10",
         "spatie/laravel-medialibrary": "^11.12",
+        "spatie/laravel-permission": "^6.18",
         "spatie/laravel-settings": "^3.4"
     },
     "require-dev": {
@@ -33,8 +34,12 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Modules\\": "modules/"
-        }
+            "Modules\\": "modules/",
+            "Modules\\Core\\": "modules/Core/src/"
+        },
+        "files": [
+            "modules/Core/src/Helpers/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
