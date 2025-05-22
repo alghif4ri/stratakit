@@ -15,6 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->text('body')->nullable();
+            $table->foreignId('created_by')->nullable()->constrained('users')->nullOnDelete();
+            $table->foreignId('updated_by')->nullable()->constrained('users')->nullOnDelete();
+            $table->boolean('is_active')->default(true);
+            $table->boolean('is_visible')->default(true);
+            $table->string('status')->default('draft');
             $table->timestamps();
         });
     }
