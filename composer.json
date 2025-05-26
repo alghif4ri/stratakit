@@ -14,6 +14,7 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "maatwebsite/excel": "^1.1",
+        "nwidart/laravel-modules": "^12.0",
         "pxlrbt/filament-spotlight": "^1.3",
         "spatie/laravel-activitylog": "^4.10",
         "spatie/laravel-medialibrary": "^11.12",
@@ -35,7 +36,8 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Modules\\": "modules/",
-            "Modules\\Core\\": "modules/Core/src/"
+            "Modules\\Core\\": "modules/Core/src/",
+            "Modules\\Settings\\": "modules/Settings/src/"
         },
         "files": [
             "modules/Core/src/Helpers/helpers.php"
@@ -86,7 +88,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "minimum-stability": "stable",
